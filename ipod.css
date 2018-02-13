@@ -1,0 +1,423 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+/*
+Screen Size
+*/
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+/*
+Head Bar size, background color, and text properties
+*/
+.head-bar {
+	height: 45px;
+	width: 300px;
+	background-color: #e6ccff;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px #000000;
+	line-height:45px;
+}
+
+/*
+Back Button size, background color and border, and positioning
+*/
+.back-button {
+	height:30px;
+	width:50px;
+	background-color:lightgrey;
+	border:1px solid white;
+	position:relative;
+	left:7px;
+	top:7px;
+}
+
+/*
+Back Arrow size, color, and positioning
+*/
+.back-arrow {
+	color:purple;
+	text-shadow:none;
+	position:relative;
+	top:2px;
+	margin:inherit;
+}
+
+/*
+Link parameters for back button
+*/
+a.back {
+	display:block;
+	height:inherit;
+}
+
+/* 
+	Albums 
+			*/
+
+/*
+Left Panel is for the left hand side of the screen on the albums page
+*/
+#left-panel {
+	float:left;
+}
+
+/*
+Right Panel is for the right hand side of the screen on the albums page
+*/
+#right-panel {
+	float:right;
+}
+
+/*
+This wrapper defines the subset of screen to be 
+used to contain all album related information
+*/
+.albums-album-wrapper {
+	height: 445px;
+	position:relative;
+	top:30px;
+	margin:0px 11px;
+}
+
+/*
+Specifies the album image size and positions it
+such that it is centered within the panel its in
+*/
+.albums-album-art {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 130px;
+	width: 130px;
+}
+
+/*
+Centers the album name within the panel its in
+Offsets the name as well
+*/
+.albums-album-name {
+	text-align: center;
+	position:relative;
+	bottom: 12px;
+}
+
+/*
+Centers the album artist name within the panel its in
+Sets the font size and offsets the name as well
+*/
+.albums-artist-name {
+	text-align: center;
+	font-size: 14px;
+	position:relative;
+	bottom: 26px;
+}
+
+/* 
+	Songs 
+			*/
+
+/*
+Picture panel defines the subset of the screen used by the song album picture
+*/
+#picture-panel {
+	height:140px;
+	width:140px;
+	float:left;
+}
+
+/*
+Detail panel defines the subset of the screen used by the song album details
+*/
+#detail-panel {
+	height:140px;
+	width:120px;
+	float:right;
+}
+
+/*
+Song panel defines the subset of the screen used by song names
+*/
+#song-panel {
+	height:300px;
+	position:relative;
+	bottom:300px;
+	margin:0px 11px;
+}
+
+/*
+This wrapper defines the subset of screen to be 
+used to contain all song related information
+*/
+
+.songs-info-wrapper {
+	height: 460px;
+	position:relative;
+	top:10px;
+	margin:0px 11px;
+}
+
+/*
+Defines the album art size
+*/
+.songs-album-art {
+	height:140px;
+	width:140px;
+}
+
+/*
+Defines positioning of song album name
+*/
+.songs-album-name {
+	text-align:left;
+	padding-bottom:6px;
+}
+
+/*
+Defines positioning of song artist name
+*/
+.songs-artist-name {
+	text-align:left;
+	padding-bottom:10px;
+}
+
+/*
+Defines positioning of song album year
+*/
+.songs-album-year {
+	text-align: left;
+}
+
+/*
+Defines formatting and positioning of songs
+*/
+.songs-list {
+	position:relative;
+	right:15px;
+	width:245px;
+	border-style:solid;
+	border-color:lightgrey;
+	border-width:1px;
+	margin-bottom:5px;
+	padding-left:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+/* 
+	Player 
+			*/
+
+/*
+Defines positioning of album art
+*/
+.player-album-art {
+	display:block;
+	height:230px;
+	width:230px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:35px;
+}
+
+/*
+Defines positioning of song-info
+*/
+.player-song-info {
+	text-align:center;
+	color:purple;
+	position:relative;
+	bottom:20px;
+}
+
+/*
+Defines the id and positioning of the song name
+*/
+#player-song-name {
+	text-align:center;
+	font-size:20;
+	position:relative;
+	bottom:5px;
+}
+
+/*
+Defines positioning of the volume icon
+*/
+.volume-bar {
+	display:inline-block;
+	position:relative;
+	bottom:72px;
+}
+
+/*
+Defines positioning of the container that holds the volume
+levels and icon
+*/
+.volume-container {
+	text-align:center;
+}
+
+/*
+Defines the positioning of the volume level bars
+*/
+.volume-level {
+	height:6px;
+	width:24px;
+	display:inline-block;
+	background-color:white;
+	border:1px solid black;
+	position:relative;
+	bottom:80px;
+}
+
+/*
+Defines common positioning of each volume button
+*/
+.volume-rocker {
+	position:relative;
+	bottom:70px;
+}
+
+/*
+Defines specific positioning of the "decrease" volume button
+*/
+.volume-rocker .vdn {
+	width: 33%;;
+	border-radius: 5px;
+	border:1px solid lightgrey;
+	float:left;
+	position:relative;
+	left:25px;
+	background-color:white;
+}
+
+/*
+Defines background and border colors of "decrease" 
+volume button when it is clicked
+*/
+.volume-rocker .vdn:active {
+	background-color:#e6ccff;
+	border:2px solid #87CEEB;
+}
+
+/*
+Takes out the focus outline that would otherwise remain
+when the "decrease" volume button is clicked
+*/
+.volume-rocker .vdn:focus {
+	outline:0;
+}
+
+/*
+Defines specific positioning of the "increase" volume button
+*/
+.volume-rocker .vup {
+	width: 33%;;
+	border-radius: 5px;
+	border:1px solid lightgrey;
+	float:right;
+	position:relative;
+	right:25px;
+	background-color:white;
+}
+
+/*
+Defines background and border colors of "increase" 
+volume button when it is clicked
+*/
+.volume-rocker .vup:active {
+	background-color:#e6ccff;
+	border:2px solid #87CEEB;
+}
+
+/*
+Takes out the focus outline that would otherwise remain
+when the "increase" volume button is clicked
+*/
+.volume-rocker .vup:focus {
+	outline:0;
+}
+
+/*
+Define positioning of the player controls
+*/
+.player-controls{
+	text-align:center;
+	position:relative;
+	bottom:80px;
+}
+
+/*
+Define positioning of the slider container
+*/
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+	position:relative;
+	bottom:20px;
+}
+
+/*
+Define slider appearance. Source is from w3schools
+*/
+.slider {
+	-webkit-appearance: none;
+	width: 80%;
+	height: 5px;
+	border-radius: 5px;
+	background: linear-gradient(to top,grey,lightgrey,grey);
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+Take out the focus outline that would otherwise remain
+when the slider is clicked on
+*/
+.slider:focus {
+	outline:0;
+}
+
+/*
+Define slider circle appearnace. Source is from w3schools
+*/
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border:1px solid black;
+	background-color: white;
+	cursor: pointer;
+}
+
+/*
+Define positioning of the song's elapsed time
+*/
+#time-elapsed {
+	text-align:left;
+	position:relative;
+	left:30px;
+	bottom:32px;
+}
+
+/*
+Define positioning of the song's total time
+*/
+#time-total{
+	text-align:right;
+	position:relative;
+	right:30px;
+	bottom:66px;
+}
